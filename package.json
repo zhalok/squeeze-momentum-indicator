@@ -1,0 +1,22 @@
+{
+  "name": "momentum-indicator",
+  "version": "1.0.0",
+  "description": "an application for calcualting momentum indicator",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app"
+  },
+  "keywords": [
+    "trading",
+    "momentun-indicator"
+  ],
+  "author": "zhalok",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "keltnerchannel": "^1.4.3",
+    "nodemon": "^2.0.16",
+    "technicalindicators": "^3.1.0"
+  }
+}
