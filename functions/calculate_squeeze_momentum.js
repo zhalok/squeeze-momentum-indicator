@@ -1,6 +1,6 @@
 const calculate_bb = require("../functions/utils/calculate_bb");
 const calculate_kc = require("../functions/utils/calculate_kc");
-
+const kc = require("keltnerchannel").kc;
 const calcualate_squeeze_momentum = (req, res, next) => {
   const { data, period, standard_deviation, atr_data, multiplier } = req.body;
 
