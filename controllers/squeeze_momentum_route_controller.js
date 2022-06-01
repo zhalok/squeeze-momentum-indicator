@@ -52,7 +52,7 @@ const calcualate_squeeze_momentum = (req, res, next) => {
     }
   }
 
-  res.json({ squeeze_points });
+  res.json({ squeezed_segments });
 };
 
 module.exports = { calcualate_squeeze_momentum };
