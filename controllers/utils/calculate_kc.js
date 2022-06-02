@@ -7,6 +7,7 @@ const calculate_kc = (input) => {
 // this data set was directly copied from the github repo you sent me
 // lets run unit testing here
 // yes both of the processes pass the tests successfully
+// now lets check for the bb calculations
 var input = {
   useSMA: false,
   maPeriod: 20,
@@ -54,6 +55,6 @@ var input = {
   ],
 };
 
-console.log(calculate_kc(input));
+// console.log(calculate_kc(input));
 
 module.exports = calculate_kc;
