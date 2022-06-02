@@ -108,8 +108,6 @@ const calcualate_squeeze_momentum = (req, res, next) => {
 
   const lowest = Lowest.calculate(inputLowest);
 
-  const avg = (highest + lowest) / 2;
-
   const currentHigh = highest[highest.length - 1];
 
   const currentLow = lowest[lowest.length - 1];
@@ -121,8 +119,16 @@ const calcualate_squeeze_momentum = (req, res, next) => {
 
   const currentSMA = sma[sma.length - 1];
 
+  // console.log(sma);
+  // const values = [];
+
   const values =
     currentClose - ((currentHigh + currentLow) / 2 + currentSMA) / 2;
+  // for (let i = 0; i < close.length; i++) {
+  //   const currentClose = close[i];
+  //   const curVal = currentClose - ((currentHigh + currentLow) / 2 + sma[i]) / 2;
+  //   values.push(curVal);
+  // }
 
   res.json({ sqzOn, sqzOff, values });
 
